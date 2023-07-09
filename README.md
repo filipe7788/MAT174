@@ -1,4 +1,52 @@
-### Interpolação
+# Meus Algoritmos Numéricos
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+## Bem-vindo ao Repositório de Algoritmos Numéricos!
+
+Este repositório contém implementações em Python de algoritmos numéricos comumente utilizados para resolver problemas matemáticos e computacionais. Os algoritmos visam oferecer soluções eficientes e precisas para uma variedade de problemas.
+
+Os algoritmos incluídos são:
+
+- **Interpolação**: Interpolação de Lagrange e Interpolação de Newton.
+- **Integração Numérica**: Método dos Trapézios e Método 1/3 de Simpson.
+- **Eliminação de Gauss**: Gauss-Jacobi e Gauss-Seidel.
+- **Método Numérico**: Método de Euler.
+
+Cada algoritmo possui uma explicação detalhada e exemplos de uso em seus respectivos arquivos. Além disso, você encontrará um conjunto de funções e utilitários auxiliares para facilitar o uso dos algoritmos.
+
+## Como Utilizar
+
+1. Certifique-se de ter o Python instalado em seu sistema. Você pode verificar se o Python está instalado executando o seguinte comando no terminal ou prompt de comando:
+   
+ ```shell
+   python --version
+ ```
+
+Se o comando for reconhecido e exibir a versão do Python, significa que o Python está instalado corretamente. Caso contrário, você precisará instalar o Python em seu sistema antes de prosseguir.
+
+2. Verifique se você tem o **pip** instalado em seu sistema. O pip é um gerenciador de pacotes para instalar bibliotecas e dependências do Python. Para verificar se o pip está instalado, execute o seguinte comando:
+
+ ```shell
+   pip --version
+ ```
+
+Se o comando for reconhecido e exibir a versão do pip, significa que o pip está instalado corretamente. Caso contrário, você precisará instalar o pip em seu sistema. Consulte a documentação oficial do Python para obter instruções sobre como instalar o pip.
+
+3. Instale a biblioteca **NumPy** utilizando o seguinte comando:
+
+ ```shell
+   pip install numpy
+ ```
+
+O pip instalará o NumPy e suas dependências automaticamente.
+
+4. Escolha o algoritmo que deseja utilizar e acesse o respectivo arquivo.
+5. Siga as instruções fornecidas para fornecer os dados de entrada necessários.
+6. Execute o código em Python.
+7. Verifique os resultados e adapte o código conforme necessário para atender às suas necessidades específicas.
+   
+# Interpolação
 
 #### [Interpolação de Lagrange](https://en.wikipedia.org/wiki/Lagrange_polynomial)
 
@@ -38,7 +86,7 @@ O algoritmo da Interpolação de Newton consiste em:
 
 A Interpolação de Newton é mais eficiente computacionalmente do que a Interpolação de Lagrange, pois calcula as diferenças divididas uma vez e reutiliza-as para estimar os valores em diferentes pontos. Além disso, é possível adicionar pontos extras à interpolação sem recalcular todos os coeficientes.
 
-### Integração Numérica
+# Integração Numérica
 
 #### [Método dos Trapézios](https://en.wikipedia.org/wiki/Trapezoidal_rule)
 
@@ -75,7 +123,7 @@ O algoritmo do Método 1/3 de Simpson consiste em:
 
 O Método 1/3 de Simpson é uma abordagem mais precisa do que o Método dos Trapézios para estimar a integral de uma função. Ele utiliza curvas quadráticas para aproximar a função, o que resulta em uma melhor precisão.
 
-### Eliminação de Gauss
+# Eliminação de Gauss
 
 #### [Gauss-Jacobi](https://en.wikipedia.org/wiki/Gauss%E2%80%93Jacobi_method)
 
@@ -102,7 +150,7 @@ O algoritmo do Gauss-Seidel é semelhante ao do Gauss-Jacobi, mas com uma altera
 
 O Método de Gauss-Seidel melhora a convergência em relação ao Método de Gauss-Jacobi, pois utiliza as soluções atualizadas imediatamente. Isso reduz o número de iterações necessárias para atingir a solução aproximada.
 
-### Método Numérico de Euler
+# Método Numérico de Euler
 
 #### [Método de Euler](https://en.wikipedia.org/wiki/Euler_method)
 
@@ -118,3 +166,12 @@ O algoritmo do Método de Euler consiste em:
 4. Retornar o valor final de `y`.
 
 O Método de Euler é uma abordagem simples para resolver EDOs de primeira ordem, mas pode ter uma precisão limitada, especialmente para EDOs com curvas complexas ou sensíveis a pequenas variações no intervalo.
+
+## Contribuição
+
+Se você gostaria de contribuir para este repositório, sinta-se à vontade para abrir uma issue ou enviar um pull request. Ficarei feliz em revisar e incorporar suas contribuições.
+
+## Licença
+
+Este repositório é licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
+
